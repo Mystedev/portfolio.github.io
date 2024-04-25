@@ -1,0 +1,378 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Cascadia Code';
+    /* font-size: 15px; */
+}
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(https://wallpapershome.com/images/pages/pic_h/17113.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 50px;
+}
+.container{
+    position: relative;
+    width: 1490px;
+    height: 700px;
+    background: rgba(208, 204, 204, 0.547);
+    box-shadow: 0 15px 35px rgb(0, 0, 0);
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+}
+header{
+    position: absolute;
+    height: 80px;
+    top: -60px;
+    right: 20px;
+    width: 100%;
+    left: 0px;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.276);
+    border-radius: 30px;
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+}
+header .logo{
+    color: black;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 2em;
+}
+header ul{
+    display: flex;
+}
+header ul li{
+    list-style: none;
+    margin: 0 10px;
+}
+header ul li a{
+    text-decoration: none;
+    font-weight:bold;
+    font-size: 15px;
+    color: white;
+    background-color: rgba(108, 5, 53, 0.984);
+    border: 1px solid transparent;
+    padding: 8px 15px;
+    border-radius: 25px;
+    transition: 0.2s  ease-in;
+}
+header ul li a:hover,header ul li a:active{
+    background: white;
+    color: rgba(108, 5, 53, 0.984);
+    border: 1px solid  white;
+    box-shadow: 0 5px 10px white;
+}
+
+.columna-izq{
+    background-color: transparent;
+    height: 600px;
+}
+.columna-izq .columna-oculta{
+    width: 700px;
+    height: 620px;
+    position: absolute;
+    left: 699px;
+    top: 40px;
+    border-radius: 15px;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0 15px 35px rgba(19, 17, 17, 0.1);
+    backdrop-filter: blur(100px);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    padding: 40px;
+    padding-left: 30px;
+    transition: ease-in-out 0.5s;
+}
+.columna-izq .columna-oculta:hover{
+    transform: translateX(-690px);
+}
+.columna-izq .columna-oculta h1{
+    font-size: 20px;
+    color: rgba(108, 5, 53, 0.984);
+    border-bottom: 2px  solid #dcdfe3;
+}
+.columna-izq .columna-oculta .experiencia{
+    display: grid;
+    gap: 70px;
+    margin-top: 30px;
+    grid-template-columns: 250px 250px;
+    grid-template-rows: 100px 100px;
+}
+.columna-oculta .experiencia #work-experience h4{
+    font-size: 20px;
+    color: rgba(108, 5, 53, 0.984);
+    border-bottom: 4px  solid #000000;
+}
+.columna-izq img{
+    width: 200px;
+    height: 200px;
+    border-radius: 178px;
+    transform: scale(1.4);
+    position: relative;
+    margin-left: 175px;
+    margin-top: 40px;
+    border: 3px solid   white;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 0 8px 9px rgba(0, 0, 0, 0.984);
+    /*Atajo para las animaciones*/
+    /*animation: img-effect;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-direction: normal;
+    animation-iteration-count: infinite;*/
+}
+/*SECCION SKILLS*/
+.columna-izq .skills{
+    margin-top:50px ;
+}
+.columna-izq  .skills .lenguajes-web{
+    background-color: transparent;
+    margin-top: 15px;
+    max-width: 630px;
+    height: 40px;
+}
+.columna-izq .skills .lenguajes-web .lista-skills{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+}
+.columna-izq .skills .lenguajes-web .lista-skills li{
+    text-decoration: none;
+    font-weight:bold;
+    background-color: #000000;
+    border-radius: 16px;
+    width: fit-content;
+    padding: 2px 5px;
+}
+.columna-izq .skills .lenguajes-web .lista-skills li a{
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+/* .columna-izq  .skills .lenguajes-web .lista-skills li:nth-child(3){
+    text-decoration: none;
+    font-weight:bold;
+    font-size: 10px;
+    background-color: rgba(206, 116, 20, 0.984);
+    border: 1px solid transparent;
+    padding: 8px 15px;
+    border-radius: 25px;
+    transition: 0.1s  ease-in;
+}
+.columna-izq  .skills .lenguajes-web .lista-skills li:nth-child(3):hover{
+    background: white;
+    color: black;
+    border: 1px solid  white;
+    box-shadow: 0 5px 10px white;
+} */
+/* .columna-izq  .skills .lenguajes-web .lista-skills li:nth-child(3) a{
+    text-decoration: none;
+    color: white;
+    font-weight:bold;
+    font-size: 15px;
+    background-color: rgba(3, 3, 3, 0.984);
+    border: 1px solid transparent;
+    padding: 8px 15px;
+    border-radius: 25px;
+    transition: 0.1s  ease-in;
+}
+.columna-izq  .skills .lenguajes-web .lista-skills li:nth-child(3) a:hover{
+    background: white;
+    color: black;
+    border: 1px solid  white;
+    box-shadow: 0 5px 10px white;
+} */
+/*.columna-izq  .skills .lenguajes-web .lista-skills li a {
+    text-decoration: none;
+    font-weight:bold;
+    font-size: 15px;
+    color: white;
+    background-color: rgba(31, 34, 72, 0.984);
+    border: 1px solid transparent;
+    padding: 8px 15px;
+    border-radius: 25px;
+    transition: 0.2s  ease-in;
+}*/
+.columna-izq .skills  h2{
+    margin-top: 40px;
+}
+.columna-izq  .skills h2 span{
+    font-size: 10px;
+    color: #000000;
+}
+/*SECCION HABILIDADES ADQUIRIDAS*/
+.lista-habilidades{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-top: 30px;
+    list-style: none;
+}
+.lista-habilidades li a{
+    font-size: 20px;
+    color: #ffffff;
+    text-decoration: none;
+    background-color: rgba(108, 5, 53, 0.984);
+    padding: 10px 20px;
+    border-radius: 20px;
+    transition: 0.2s ease-in;
+}
+.lista-habilidades li a:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgba(108, 5, 53, 0.984);
+    box-shadow: 0 5px 10px rgba(13, 13, 13, 0.421);
+} 
+.skills h2{
+    font-size: 20px;
+}
+/*CONTENIDO DERECHO*/
+.content{
+    height: 600px;
+    max-width: 730px;
+    box-shadow: 0 15px 35px rgba(19, 17, 17, 0.1);
+    border-radius: 20px;
+    backdrop-filter: blur(90px);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    padding: 40px;
+    padding-left: 30px;
+    transition: .3s ease-in-out;
+}
+.content h2{
+    font-size: 40px;
+    color: black;
+}
+.content p{
+    font-size: 16px;
+    color: black;
+    margin-bottom: 15px;
+}
+.content p span{
+    color: rgba(108, 5, 53, 0.984);
+    font-weight: bold;
+    font-size: 24px;
+}
+.content a{
+    display: inline-block;
+    padding: 15px 30px;
+    background: black;
+    color: white;
+    margin-top: 20px;
+    border-radius: 30px;
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: none;
+    box-shadow: 0 5px  10px rgba(29, 57, 99, 0.984);
+    transition: 0.2s  ease-out;
+}
+.content a:hover{
+    background: white;
+    color: black;
+}
+/*INTERESES*/
+ .contenedor-intereses{
+    display: grid;
+    grid-template-columns: 100px 100px ;
+    grid-template-rows: 100px 100px;
+    gap: 5px;
+}
+.contenedor-intereses .interes{
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    color:white;
+    border-radius: 10px;
+    margin: 0 15px 15px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+}
+ .contenedor-intereses .interes:hover{
+    background-color: white;
+    color: black;
+    transform: scale(0.9);
+}
+.contenedor-intereses .interes i{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.col{
+    display: flex;
+}
+.col h3{
+    font-size: 3em;
+}
+.col ul{
+    list-style: none;
+}
+.col ul li{
+    margin: 12px 0;
+}
+.col ul li strong{
+    display: inline-block;
+    color: black;
+    width: 130px;
+    font-size: 25px;
+}
+.col ul li span{
+    background-color: rgba(108, 5, 53, 0.984);
+    padding: 3px;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 5px;
+    color: white;
+    transition: 0.2s ease-in;
+}
+.col ul li span:hover{
+    background-color: black;
+    color: white;
+}
+
+.col-der{
+    margin-top: 0px;
+    margin-left: 25px;
+    width: auto
+}
+.col-der h3{
+    font-size: 2em;
+    border-bottom: 3px solid black;
+}
+.col-der ul li b{
+    float:none;
+    text-align: left;
+    margin-right: 6px;
+    font-size: 20px;
+    background-color: white;
+    border-radius: 5px;
+    width: auto;
+    transition: 0.2s ease-out;
+}
+.col-der ul li b:hover{
+    background-color: rgba(108, 5, 53, 0.984);
+    color: white;
+}
